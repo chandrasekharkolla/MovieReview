@@ -1,4 +1,5 @@
 class Movie < ActiveRecord::Base
+	searchkick
 	belongs_to :user
 	has_many :reviews
 	has_attached_file :image, styles: { medium: "300x300>" }
